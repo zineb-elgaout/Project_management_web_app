@@ -1,0 +1,231 @@
+html, body {
+scroll-behavior: smooth;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+
+.slide {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 80px 20px;
+}
+
+.big-title {
+color:rgb(32, 32, 97) ;
+font-size: clamp(2.5rem, 8vw, 5rem);
+background: linear-gradient(to right, #c177ac, #2d5498);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+line-height: 1.2;
+}
+
+.navbar {
+position: fixed;
+width: 100%;
+z-index: 1000;
+background: #020042;
+
+transition: all 0.3s ease;
+}
+
+
+
+.small-title {
+color: #2d5498;
+margin-top: 1rem;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.nav-item a {
+color: white;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+color: rgba(239, 211, 211, 0.838);
+border-bottom: 2px solid white;
+}
+
+.logo-nom {
+font-weight: bold;
+font-size: clamp(2rem, 6vw, 2rem);
+color: rgb(240, 236, 236);
+}
+
+.bouton2 {
+background: linear-gradient(to right, #c177ac, #2d5498);
+border: none;
+color: white;
+transition: all 0.3s ease;
+padding: 10px 25px;
+}
+
+.bouton2:hover {
+background:linear-gradient(to left, #c177ac, #2d5498);
+color: white;
+transform: scale(1.05);
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bouton {
+background-color: none;
+border: 1px solid white;
+transition: all 0.3s ease;
+}
+
+.bouton a {
+text-decoration: none;
+}
+
+.bouton:hover {
+transform: scale(1.05);
+}
+
+.hero-img {
+max-height: 70vh;
+width: auto;
+margin: 0 auto;
+display: block;
+}
+
+
+
+.section-title {
+font-size: clamp(1.8rem, 5vw, 3rem);
+background: linear-gradient(to right, #c177ac, #2d5498);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-bottom: 1.5rem;
+font-weight: 700;
+}
+
+.card {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+border: none;
+border-radius: 10px;
+}
+
+.card:hover {
+transform: translateY(-10px);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+min-height: 100vh;
+background: url(img/footer_back.svg);
+background-repeat: no-repeat;
+margin: 0;
+background-position: bottom;
+color: white;
+padding: 50px 20px;
+}
+
+.footer-link {
+color: #fff;
+text-decoration: none;
+margin-right: 15px;
+transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+color: rgba(255, 255, 255, 0.8);
+}
+
+.logo-img {
+width: 50px;
+height: 50px;
+}
+
+.text-objectif {
+font-size: 1rem;
+line-height: 1.7;
+}
+
+@media (max-width: 992px) {
+.slide {
+    padding: 100px 20px;
+}
+
+.hero-slide {
+    padding-top: 100px;
+}
+
+.hero-img {
+    max-height: 50vh;
+    margin-bottom: 30px;
+}
+}
+
+@media (max-width: 768px) {
+.big-title {
+    font-size: 2.5rem;
+}
+
+.section-title {
+    font-size: 2rem;
+}
+
+.navbar-collapse {
+    background: #020042;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+footer {
+    padding: 40px 20px;
+}
+}
+
+@media (max-width: 576px) {
+.big-title {
+    font-size: 2rem;
+}
+
+.small-title {
+    font-size: 1.2rem;
+}
+
+.section-title {
+    font-size: 1.8rem;
+}
+
+.btn {
+    width: 100%;
+}
+}
+.feature-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+.bouton_feature{
+    color: #31192a;
+    font-size: x-large;
+    margin: 0 3vh;
+}
+
+
+#features i{
+    color: #4b4de8;
+
+}
+
