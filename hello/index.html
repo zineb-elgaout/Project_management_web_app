@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Synergia - Gestion Projets ENSA</title>
+  <link  href="img/logo-blue.png" type="image/png" rel="icon">
+  <link href="bootstrap5/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-3">
+    <div class="container">
+      
+      <a class="navbar-brand logo-nom" href="#"><i class="fas fa-project-diagram me-3"></i>Synergia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Fonctionnalités</a></li>
+          <li class="nav-item"><a class="nav-link" href="#service">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#objectif">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#espaces">Espaces</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3 my-2 my-lg-0">
+            <button class="btn rounded-pill d-flex align-items-center bouton">
+              <a href="login.php"><i class="bi bi-person-circle me-1"></i>Connexion</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECTION 1 : HERO -->
+  <section id="hero" class="slide hero-slide " style="background: url(img/hero_back.svg);background-repeat:no-repeat;width:100%;background-position:bottom;    background-position-y: top;
+">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Texte à gauche -->
+        <div class="col-lg-6 text-start order-1 order-lg-0">
+          <h1 class="fw-bold big-title">Bienvenue Sur Synergia</h1> 
+          <p class="lead mt-3 small-title text-white">
+            Centralisez, archivez, inspirez : Vos projets méritent d'être vus.
+          </p>
+          <a href="login.php" class="btn btn-lg mt-4 bouton2">Commencer maintenant</a>
+        </div>
+  
+        <!-- Image à droite -->
+        <div class="col-lg-6 text-center order-0 order-lg-1 mb-5 mb-lg-0">
+          <img src="img/creativity.svg" alt="Illustration accueil" class="img-fluid hero-img"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-5 h-100 justify-content-center align-content-center min-vh-100" >
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold section-title">Fonctionnalités clés</h2>
+            <p class="lead text-muted">Découvrez comment Synergia peut simplifier la gestion de vos projets académiques</p>
+        </div>
+        
+        <ul class="nav nav-pills justify-content-center mb-5" id="features-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active bouton_feature" id="student-tab" data-bs-toggle="pill" data-bs-target="#student" type="button">Espace Étudiant</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link bouton_feature" id="teacher-tab" data-bs-toggle="pill" data-bs-target="#teacher" type="button">Espace Enseignant</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link bouton_feature" id="admin-tab" data-bs-toggle="pill" data-bs-target="#admin" type="button">Espace Admin</button>
+            </li>
+        </ul>
+        
+        <div class="tab-content" id="features-tabContent">
+            <!-- Student Features -->
+            <div class="tab-pane fade show active" id="student" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="feature-card p-4 bg-light">
+                            <div class="feature-icon">
+                                <i class="fas fa-plus-circle"></i>
+                            </div>
+                            <h4>Soumission de projet</h4>
+                            <p>Soumettez facilement vos nouveaux projets avec titre, description, catégorie et type (stage ou module).</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card p-4 bg-light">
+                            <div class="feature-icon">
+                                <i class="fas fa-upload"></i>
+                            </div>
+                            <h4>Upload des livrables</h4>
+                            <p>Déposez vos rapports PDF, diaporamas, codes sources et autres documents nécessaires.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card p-4 bg-light">
+                            <div class="feature-icon">
+                                <i class="fas fa-history"></i>
+                            </div>
+                            <h4>Historique des projets</h4>
+                            <p>Consultez l'historique complet de tous vos projets réalisés avec leurs statuts et évaluations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Teacher Features -->
+            <div class="tab-pane fade" id="teacher" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="feature-card p-4 bg-light">
+                            <div class="feature-icon">
+                                <i class="fas fa-list-ol"></i>
+                            </div>
+                            <h4>Liste des projets</h4>
+                            <p>Accédez aux projets classés par année, semestre, module ou étudiant pour un suivi optimal.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card p-4 bg-light">
+                            <div class="feature-icon">
+                                <i class="fas fa-comment-alt"></i>
+                            </div>
+                            <h4>Remarques & Évaluation</h4>
+                            <p>Ajoutez des commentaires et évaluez les projets soumis par vos étudiants.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card p-4 bg-light">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h4>Validation des projets</h4>
+                            <p>Validez ou refusez les projets soumis avec des retours constructifs pour les étudiants.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Admin Features -->
+            <div class="tab-pane fade" id="admin" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="feature-card p-4 bg-white">
+                            <div class="feature-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>Accès complet</h4>
+                            <p>Accédez à l'ensemble des projets, utilisateurs et données de la plateforme.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card p-4 bg-white">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h4>Statistiques avancées</h4>
+                            <p>Analysez les données avec des statistiques sur les projets par module, encadrant, etc.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card p-4 bg-white">
+                            <div class="feature-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <h4>Gestion des utilisateurs</h4>
+                            <p>Créez et gérez les comptes utilisateurs avec des droits d'accès personnalisés.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- SECTION VALEURS -->
+  <section id="valeurs" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Colonne droite : Logo et nom -->
+        <div class="col-lg-5 text-center mt-5 mt-lg-0">
+          <img src="img/revenue.svg" alt="Logo de l'application" class="img-fluid mb-4" />
+        </div>
+        <!-- Colonne gauche : Cartes -->
+        <div class="col-lg-7">
+          <div class="row g-4">
+            <div class="col-md-12">
+              <div class="card h-100 shadow-sm border-0 p-4">
+                <i class="bi bi-lightbulb-fill fs-1 text-warning mb-3"></i>
+                <h5 class="card-title">Innovant et motivant</h5>
+                <p class="card-text">
+                  Une reconnaissance du travail étudiant et une source d'inspiration continue.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="card h-100 shadow-sm border-0 p-4">
+                <i class="bi bi-people-fill fs-1 text-info mb-3"></i>
+                <h5 class="card-title">Collaboratif</h5>
+                <p class="card-text">
+                  Étudiants, enseignants, administrateurs : tous connectés autour du savoir.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="card h-100 shadow-sm border-0 p-4">
+                <i class="bi bi-rocket-fill fs-1 text-secondary mb-3"></i>
+                <h5 class="card-title">Tonalité dynamique</h5>
+                <p class="card-text">
+                  Chaque utilisateur devient acteur du changement et bâtisseur de connaissances.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- SECTION SERVICES -->
+  <section id="service" class="py-5 d-flex flex-column justify-content-center align-items-center min-vh-100" style="background-color: #f8f9fa;">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <span class="section-title fw-bold">Nos Services</span>
+          <h2 class="content-title mt-3 mb-4">
+            Centralisation et gestion des projets étudiants à travers Synergia
+          </h2>
+          <p class="lead mb-3">
+            Synergia permet aux étudiants, enseignants et administrateurs de gérer, archiver et valoriser les projets à travers une plateforme centralisée. Chaque projet devient un moyen de collaboration et d'inspiration.
+          </p>
+          <p class="mb-4">
+            Notre plateforme permet d'organiser efficacement tous les projets étudiants en un seul endroit, facilitant leur accès et leur gestion pour tous les utilisateurs.
+          </p>
+          <a href="login.php" class="btn bouton2">Commencez maintenant</a>
+        </div>
+        <div class="col-lg-6 offset-lg-1">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <div class="services-item p-4 bg-white shadow rounded h-100 card">
+                <div class="services-icon mb-3">
+                  <i class="bi bi-search fs-3 text-primary"></i>
+                </div>
+                <h4 class="fw-bold">Centralisation</h4>
+                <p>Projets regroupés dans un espace unique, facile à gérer.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="services-item p-4 bg-white shadow rounded h-100 card">
+                <div class="services-icon mb-3">
+                  <i class="bi bi-command fs-3 text-primary"></i>
+                </div>
+                <h4 class="fw-bold">Collaboration</h4>
+                <p>Travail d'équipe facilité entre étudiants, professeurs et admins.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="services-item p-4 bg-white shadow rounded h-100 card">
+                <div class="services-icon mb-3">
+                  <i class="bi bi-grid fs-3 text-primary"></i>
+                </div>
+                <h4 class="fw-bold">Gestion des Projets</h4>          
+                <p>Plateforme dédiée à l'organisation, la gestion et la soumission des projets étudiants.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="services-item p-4 bg-white shadow rounded h-100 card">
+                <div class="services-icon mb-3">
+                  <i class="bi bi-file-lock fs-3 text-primary"></i>
+                </div>
+                <h4 class="fw-bold">Archivage Sécurisé</h4>
+                <p>Conservez tous vos projets dans un espace sécurisé et accessible à tout moment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION OBJECTIF -->
+  <section id="objectif" class="py-5 bg-light d-flex flex-column justify-content-center align-items-center min-vh-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Image -->
+        <div class="col-lg-5 text-center mb-5 mb-lg-0">
+          <img src="img/programming.svg" alt="Synergia Image" class="img-fluid" style="max-height: 70vh;">
+        </div>
+        <!-- Texte de description -->
+        <div class="col-lg-7">
+          <h2 class="fw-bold mb-4">Synergia centralise les projets étudiants de l'ENSA</h2>
+          <p class="text-objectif">
+            À l'ENSA Kénitra, les étudiants réalisent chaque année de nombreux projets techniques, 
+            innovants et interdisciplinaires dans divers domaines du génie. Toutefois, ces travaux restent souvent dispersés, 
+            peu accessibles et rarement valorisés après leur présentation. L'application Synergia répond à ce besoin en proposant une plateforme numérique dédiée à la centralisation,
+            à l'archivage et à la valorisation des projets étudiants. Elle permet non seulement de conserver une trace durable des productions académiques,
+            mais aussi de faciliter la consultation par les enseignants, et les futurs étudiants. En promouvant la mise en réseau des compétences et le partage des expériences, 
+            Synergia favorise l'émergence d'une culture d'innovation continue et renforce le sentiment d'appartenance à la communauté ENSAKiste.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION ESPACES UTILISATEURS -->
+  <section id="espaces" class="py-5 bg-white d-flex flex-column justify-content-center align-items-center min-vh-100">
+    <div class="container">
+      <!-- Texte d'introduction -->
+      <div class="text-center mb-5">
+        <h2 class="section-title">Espaces Utilisateurs</h2>
+        <p class="lead mt-3">
+          Prêt à collaborer, valoriser votre savoir-faire et laisser une empreinte durable ?<br>
+          Accédez à votre espace dès maintenant !
+        </p>
+      </div>
+
+      <!-- Cartes des espaces -->
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-lg border-0 text-center p-4">
+            <i class="bi bi-mortarboard-fill fs-1 text-primary mb-3"></i>
+            <h5 class="text-primary">Espace Étudiant</h5>
+            <p>Soumission de projets, upload de livrables, suivi personnel.</p>
+            <a href="login.php" class="btn btn-outline-primary mt-2">Accéder</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-lg border-0 text-center p-4">
+            <i class="bi bi-person-badge-fill fs-1 text-success mb-3"></i>
+            <h5 class="text-success">Espace Enseignant</h5>
+            <p>Consultation, évaluation, validation des projets étudiants.</p>
+            <a href="login.php" class="btn btn-outline-success mt-2">Accéder</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-lg border-0 text-center p-4">
+            <i class="bi bi-shield-lock-fill fs-1 text-danger mb-3"></i>
+            <h5 class="text-danger">Espace Admin</h5>
+            <p>Statistiques, exportation, gestion des utilisateurs et projets.</p>
+            <a href="login.php" class="btn btn-outline-danger mt-2">Accéder</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION CONTACT -->
+  <section id="contact" class="py-5 bg-light d-flex flex-column justify-content-center align-items-center min-vh-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Formulaire à gauche -->
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <h2 class="fw-bold mb-4 section-title">Contactez-nous</h2>
+          <form method="post" action="contact.php">
+            <div class="mb-3">
+              <label for="nom" class="form-label">Nom</label>
+              <input name="nom" type="text" class="form-control" id="nom" placeholder="Votre nom" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Adresse email</label>
+              <input type="email" class="form-control" id="email" placeholder="exemple@email.com" required name="email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Votre message..." required name="message"></textarea>
+            </div>
+            <button type="submit" class="btn bouton2 mt-2">Envoyer</button>
+          </form>
+        </div>
+  
+        <!-- Image à droite -->
+        <div class="col-lg-6 text-center">
+          <img src="img/contact.png" alt="Illustration contact" class="img-fluid" style="max-height: 400px;" />
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FOOTER -->
+  <footer class="d-flex flex-column justify-content-center align-items-center min-vh-100">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-4">
+          <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
+            <h3 class="mb-0"><i class="fas fa-project-diagram me-3"></i>Synergia</h3>
+          </div>
+          <p>Centralisez, archivez et valorisez tous les projets étudiants à travers une plateforme collaborative.</p>
+        </div>
+  
+        <div class="col-md-2 mb-4">
+          <h5>À propos</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a class="footer-link" href="#objectif">Notre mission</a></li>
+            <li class="mb-2"><a class="footer-link" href="#">Carrières</a></li>
+            <li class="mb-2"><a class="footer-link" href="#">Investisseurs</a></li>
+            <li><a class="footer-link" href="#hero">Blog</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-3 mb-4">
+          <h5>Aide & Support</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a class="footer-link" href="#contact">Centre d'assistance</a></li>
+            <li class="mb-2"><a class="footer-link" href="#">FAQs</a></li>
+            <li class="mb-2"><a class="footer-link" href="confidentialite.html">Confidentialité</a></li>
+            <li><a class="footer-link" href="conditions.html">Conditions d'utilisation</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-3 mb-4">
+          <h5>Suivez-nous</h5>
+          <p class="mb-3">Rejoignez notre communauté et restez informé :</p>
+          <div class="d-flex justify-content-center justify-content-md-start">
+            <a href="#" class="me-3 text-white"><i class="bi bi-facebook fs-4"></i></a>
+            <a href="#" class="me-3 text-white"><i class="bi bi-whatsapp fs-4"></i></a>
+            <a href="#" class="me-3 text-white"><i class="bi bi-instagram fs-4"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <hr class="border-light my-4"><div class="text-center">
+        <p class="mb-0">&copy; 2025 Synergia. Tous droits réservés. | Développé par Synergia.</p>
+      </div>
+      
+      
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Ajoute une classe quand on scroll pour le navbar
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        document.querySelector('.navbar').classList.add('scrolled');
+      } else {
+        document.querySelector('.navbar').classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
