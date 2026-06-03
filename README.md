@@ -2,6 +2,15 @@
 
 **Synergia** est une application web de gestion et de valorisation des projets étudiants, développée pour l'environnement ENSA. Elle propose une plateforme centralisée multi-profils pour les étudiants, enseignants et administrateurs.
 
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=1xUIz1lZ5fc" target="_blank">
+    <img src="https://img.shields.io/badge/%20Voir%20la%20Démo-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Voir la Démo sur YouTube" />
+  </a>
+</div>
+
+
+[![Voir la démo](https://github.com/user-attachments/assets/d559c4be-067f-4143-9c85-3e2a7d7a4c27)](https://www.youtube.com/watch?v=1xUIz1lZ5fc)
+
 ## Vue d'ensemble
 
 - Plateforme web PHP + HTML/CSS
